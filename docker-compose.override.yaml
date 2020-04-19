@@ -1,0 +1,21 @@
+version: "3.5"
+
+services:
+  web:
+    ports:
+      - 80:80
+    environment:
+      PHP_DISPLAY_ERRORS: 1
+
+  database:
+    environment:
+      MYSQL_DATABASE: app
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin
+
+  phpmyadmin:
+    ports:
+      - 8080:80
+    environment:
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin

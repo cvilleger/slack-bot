@@ -1,4 +1,5 @@
-![](https://github.com/cvilleger/slack-bot/workflows/App/badge.svg)
+[![github](https://github.com/cvilleger/slack-bot/workflows/App/badge.svg)](https://github.com/cvilleger/slack-bot/actions)
+[![codecov](https://codecov.io/gh/cvilleger/slack-bot/branch/master/graph/badge.svg)](https://codecov.io/gh/cvilleger/slack-bot)
 
 ## Getting Started
 
@@ -40,4 +41,10 @@ docker-compose exec --user=application web composer install
 
 ```bash
 composer install
+```
+
+#### Tests
+
+```bash
+./vendor/bin/simple-phpunit --coverage-clover coverage.xml
 ```

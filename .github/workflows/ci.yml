@@ -19,7 +19,7 @@ jobs:
     - name: Composer
       run: composer install --prefer-dist --no-progress --no-suggest --optimize-autoloader
 
-    - name: Unit tests
+    - name: Tests
       run: ./vendor/bin/simple-phpunit --coverage-clover coverage.xml
 
     - uses: codecov/codecov-action@v1
