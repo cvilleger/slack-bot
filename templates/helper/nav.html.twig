@@ -5,9 +5,9 @@
             <ul class="right hide-on-med-and-down">
                 {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
                     <li><a href="#">Dashboard</a></li>
-                    <li><a href="#">Logout</a></li>
+                    <li><a href="{{ path('logout')}}">Logout</a></li>
                 {% else %}
-                    <li><a href="#">Login</a></li>
+                    <li><a href="{{ path('hwi_oauth_service_redirect', {'service': 'google' }) }}">Login</a></li>
                 {% endif %}
             </ul>
         </div>

@@ -9,9 +9,10 @@
 /vendor/
 ###< symfony/framework-bundle ###
 
-/docker-compose.override.yml
+/docker-compose.override.yaml
 
 ###> symfony/phpunit-bridge ###
+/coverage.xml
 .phpunit
 .phpunit.result.cache
 /phpunit.xml
