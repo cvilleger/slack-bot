@@ -1,0 +1,23 @@
+name: App
+
+on: [push]
+
+jobs:
+  run:    
+    runs-on: ubuntu-latest
+    name: App Suite Tests
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v1
+      with:
+        php-version: 7.4
+        coverage: xdebug
+
+    - name: Composer
+      run: composer install --prefer-dist --no-progress --no-suggest --optimize-autoloader
+
+    - name: Unit tests
+      run: ./vendor/bin/simple-phpunit

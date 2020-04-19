@@ -10,7 +10,8 @@ services:
   database:
     environment:
       MYSQL_DATABASE: app
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin
 
   phpmyadmin:
     ports:
