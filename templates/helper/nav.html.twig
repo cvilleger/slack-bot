@@ -1,0 +1,15 @@
+<div class="navbar-fixed">
+    <nav class="grey darken-4">
+        <div class="nav-wrapper">
+            <a href="{{ path('home')}}" class="brand-logo">Bot Manager</a>
+            <ul class="right hide-on-med-and-down">
+                {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Logout</a></li>
+                {% else %}
+                    <li><a href="#">Login</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </nav>
+</div>

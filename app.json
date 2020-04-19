@@ -1,0 +1,14 @@
+{
+  "name": "sir-aza-twitch/website",
+  "description": "sir-aza-twitch/website",
+  "repository": "https://github.com/sir-aza-twitch/website",
+  "success_url": "/",
+  "env": {
+    "APP_ENV": {
+      "required": true
+    },
+    "DATABASE_URL": {
+      "required": true
+    }
+  }
+}
